@@ -1,0 +1,272 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1ebe3;
+}
+
+header {
+    background-color: #d4c4b9;
+    color: #000000;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #8b4513;
+    color: #000000; 
+    text-align: center;
+    padding: 1em;
+}
+
+nav a {
+    margin: 0 10px; 
+    color: #000000;
+    text-decoration: none;
+}
+
+.top-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #d2b48c;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+section {
+    font-size: 17px;
+    padding: 40px;
+    margin-top: 5px; 
+    text-align: center;
+}
+
+#page-footer {
+    background-color: #d2b48c;
+    color: #000000;
+    text-align: center;
+    padding: 1em;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #f1ebe3;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.panel table {
+    margin: 0 auto;
+} 
+
+.accordion {
+    background-color: #d2b48c;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.reviewsList {
+    display: none; 
+}
+
+button {
+    background-color: #d2b48c;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #634032; 
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d2b48c; 
+    padding: 1em;
+}
+
+.logo-container {
+    margin-right: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu a {
+    margin: 0 10px; 
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* Общие стили */
+
+header, nav, .top-menu, .content, section, #page-footer {
+    text-align: center;
+}
+
+/* Стили для мобильных устройств */
+
+@media screen and (max-width: 767px) {
+    .accordion {
+        width: 100%;
+    }
+
+    .panel {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button:hover {
+        background-color: #634032; 
+    }
+
+    nav a {
+        margin: 0 3px; 
+    }
+
+    .content {
+        margin-top: 5px; 
+    }
+
+    section {
+        padding: 10px; 
+        margin-top: 5px; 
+    }
+
+    .top-menu {
+        padding: 0.2em; 
+    }
+
+    .logo-container {
+        margin-right: 3px; 
+    }
+
+    .top-menu a {
+        margin: 0 10px; 
+    }
+
+
+}
+
+/* Стили для планшетных устройств */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .accordion {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #634032; 
+    }
+
+    nav a {
+        margin: 0 3px; 
+    }
+
+    .content {
+        margin-top: 5px; 
+    }
+
+    section {
+        padding: 10px; 
+        margin-top: 5px; 
+    }
+
+    .top-menu {
+        padding: 0.2em; 
+    }
+
+    .logo-container {
+        margin-right: 3px; 
+    }
+
+    .top-menu a {
+        margin: 0 10px; 
+    }
+}
+
+/* Стили для больших экранов (ПК) */
+
+@media screen and (min-width: 1024px) {
+    .panel {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .panel table {
+        width: 100%;
+    }
+
+    .accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #634032; 
+    }
+
+    nav a {
+        margin: 0 3px; 
+    }
+
+    .content {
+        margin-top: 5px; 
+    }
+
+    section {
+        padding: 10px; 
+        margin-top: 5px; 
+    }
+
+    .top-menu {
+        padding: 0.2em; 
+    }
+
+    .logo-container {
+        margin-right: 3px; 
+    }
+
+    .top-menu a {
+        margin: 0 10px; 
+    }
+}
